@@ -1,0 +1,162 @@
+/* General styling for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url('image.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Ensures the background image stays in place */
+    color: #333;
+}
+
+/* Navigation bar with bright, colorful style */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    color: #FF6F61; /* Consistent color */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF6F61; /* Consistent color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Added padding for better spacing */
+    transition: background-color 0.3s, color 0.3s; /* Added transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #FF6F61; /* Hover color */
+    color: white;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.hero-text {
+    background-color: rgba(255, 133, 155, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 10%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h3 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.team-section h3 {
+    margin-bottom: 30px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 60px 10%;
+}
+
+.timeline-section h3 {
+    margin-bottom: 30px;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+}
+
+.timeline li strong {
+    display: block;
+    font-size: 20px;
+    color: #FF6F61; /* Consistent color */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}

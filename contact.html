@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Zenlissa Bank</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Zenlissa Bank</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-section">
+      <div class="hero-text">
+        <h2>Get in Touch with Us!</h2>
+        <p>We are here to assist you with all your banking needs.</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> support@zenlissabank.com</p>
+        <p><strong>Phone:</strong> +1 (297) 555-1234</p>
+        <p><strong>Address:</strong> Main Street 123, Oranjestad, Aruba</p>
+      </div>
+
+      <div class="contact-form">
+        <h3>Contact Form</h3>
+        <form id="form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Zenlissa Bank. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("#form").on("submit", function (event) {
+          event.preventDefault();
+          alert("Your message has been sent!");
+          // You can add AJAX functionality here to send the form data to the server
+          $(this).trigger("reset"); // Reset form fields
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Zenlissa Bank</title>
+    <link rel="stylesheet" href="services.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="loanCalc.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-text">
+        <h2>Our Services</h2>
+        <p>
+          Zenlissa Bank offers a wide range of financial services to suit your
+          needs:
+        </p>
+        <ul>
+          <li>
+            <strong>Loans</strong>: Personal loans, car loans, home loans, and
+            business loans.
+          </li>
+          <li>
+            <strong>Mortgages</strong>: Competitive rates and flexible payment
+            options.
+          </li>
+          <li>
+            <strong>Insurance</strong>: Protect your future with life, car, and
+            home insurance policies.
+          </li>
+          <li>
+            <strong>Investment Services</strong>: Grow your wealth with expert
+            financial advice.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="loan-calculator-section">
+      <h2>Loan Calculator</h2>
+      <div id="calculator-container">
+        <form id="loan-form">
+          <input
+            type="number"
+            id="leenbedrag"
+            name="leenbedrag"
+            placeholder="Leenbedrag (AWG)"
+          />
+          <input
+            type="number"
+            id="rente"
+            name="rente"
+            placeholder="Rente (%)"
+          />
+          <input
+            type="number"
+            id="looptijd"
+            name="looptijd"
+            placeholder="Looptijd (maanden)"
+          />
+          <input type="button" id="button" name="button" value="Bereken" />
+        </form>
+
+        <div id="renteTotaal"></div>
+        <div id="cumulatief"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Zenlissa Bank. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

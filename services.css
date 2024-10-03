@@ -1,0 +1,149 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Shared Body Background */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('image.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Ensures the background image stays in place */
+    color: #333;
+  }
+  
+  /* Navigation bar with bright, colorful style */
+  header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    color: #FF6F61; /* Changed to match previous color */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #FF6F61; /* Changed to match previous color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Added padding for better spacing */
+    transition: background-color 0.3s, color 0.3s; /* Added transition for hover effect */
+  }
+  
+  nav ul li a:hover {
+    background-color: #FF6F61; /* Hover color */
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+  }
+  
+  .hero-text {
+    background-color: rgba(255, 133, 155, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .hero-text h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .hero-text p, .hero-text ul {
+    font-size: 18px;
+    margin: 20px 0 0;
+  }
+  
+  .hero-text ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hero-text ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Loan Calculator Section */
+  .loan-calculator-section {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  #calculator-container {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+  }
+  
+  #renteTotaal, #cumulatief {
+    margin-top: 20px;
+  }
+  
+  .termijn {
+    text-align: left;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .mnd {
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 16px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  #button{
+    background-color: rgba(255, 133, 155, 0.8);
+    border-color: #FF6F61;
+  }
+  
